@@ -1,14 +1,14 @@
-![Laravel best practices](/images/logo-arabic.png?raw=true)
+asadadsa asdaa![Laravel best practices](/images/logo-arabic.png?raw=true)
 
 You might also want to check out the [real-world Laravel example application](https://github.com/alexeymezenin/laravel-realworld-example-app)
 
 ## <p dir="rtl">الترجمات</p>
 
-[Nederlands](https://github.com/Protoqol/Beste-Laravel-Praktijken) (by [Protoqol](https://github.com/Protoqol))
+adada
 
-[한국어](https://github.com/xotrs/laravel-best-practices) (by [cherrypick](https://github.com/xotrs))
+12131
 
-[日本語](japanese.md) (by [2bo](https://github.com/2bo))
+3243232
 
 [漢語](chinese.md) (by [xiaoyi](https://github.com/Shiloh520))
 
