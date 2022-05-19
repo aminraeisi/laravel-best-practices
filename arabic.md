@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 ![Laravel best practices](/images/logo-arabic.png?raw=true)this is amins text
+=======
+asadadsa asdaa![Laravel best practices](/images/logo-arabic.png?raw=true)
+>>>>>>> dev
 
 You might also want to check out the [real-world Laravel example application](https://github.com/alexeymezenin/laravel-realworld-example-app)
 
 ## <p dir="rtl">الترجمات</p>
 
+<<<<<<< HEAD
 img
 
 p
+=======
+adada
 
-[日本語](japanese.md) (by [2bo](https://github.com/2bo))
+12131
+>>>>>>> dev
+
+3243232
 
 [漢語](chinese.md) (by [xiaoyi](https://github.com/Shiloh520))
 
