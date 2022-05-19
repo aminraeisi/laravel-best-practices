@@ -1,12 +1,12 @@
-![Laravel best practices](/images/logo-arabic.png?raw=true)
+![Laravel best practices](/images/logo-arabic.png?raw=true)this is amins text
 
 You might also want to check out the [real-world Laravel example application](https://github.com/alexeymezenin/laravel-realworld-example-app)
 
 ## <p dir="rtl">الترجمات</p>
 
-[Nederlands](https://github.com/Protoqol/Beste-Laravel-Praktijken) (by [Protoqol](https://github.com/Protoqol))
+img
 
-[한국어](https://github.com/xotrs/laravel-best-practices) (by [cherrypick](https://github.com/xotrs))
+p
 
 [日本語](japanese.md) (by [2bo](https://github.com/2bo))
 
@@ -454,27 +454,27 @@ return back()->with('message', __('app.article_added'));
 
 <p dir="rtl">يفضل استخدام الأدوات المدمجة مع إطار عمل لارافيل والحزم المقترحة من مجتمع لارفيل بدل استخدام غيرها، أي مطور سيعمل على تطبيقك في وقت لاحق سيحتاج إلى تعلم تلك الأدوات التي لا يشيع استخدامها في تطبيقات لارافيل، وأيضاً أطلب المساعدة من مجتمع لارافيل عندما تقرر الإعتماد على أحد الأدوات أو الحزم، ولا تجعل عميلك يدفع مقابل ذلك. </p>
 
-الوظيفة | الأدوات القياسية  | أدوات الطرف الثالث
------------- | ------------- | -------------
-Authorization | Policies | Entrust, Sentinel and other packages
-Compiling assets | Laravel Mix | Grunt, Gulp, 3rd party packages
-Development Environment | Laravel Sail, Homestead | Docker
-Deployment | Laravel Forge | Deployer and other solutions
-Unit testing | PHPUnit, Mockery | Phpspec
-Browser testing | Laravel Dusk | Codeception
-DB | Eloquent | SQL, Doctrine
-Templates | Blade | Twig
-Working with data | Laravel collections | Arrays
-Form validation | Request classes | 3rd party packages, validation in controller
-Authentication | Built-in | 3rd party packages, your own solution
-API authentication | Laravel Passport, Laravel Sanctum | 3rd party JWT and OAuth packages
-Creating API | Built-in | Dingo API and similar packages
-Working with DB structure | Migrations | Working with DB structure directly
-Localization | Built-in | 3rd party packages
-Realtime user interfaces | Laravel Echo, Pusher | 3rd party packages and working with WebSockets directly
-Generating testing data | Seeder classes, Model Factories, Faker | Creating testing data manually
-Task scheduling | Laravel Task Scheduler | Scripts and 3rd party packages
-DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
+| الوظيفة                   | الأدوات القياسية                       | أدوات الطرف الثالث                                      |
+| ------------------------- | -------------------------------------- | ------------------------------------------------------- |
+| Authorization             | Policies                               | Entrust, Sentinel and other packages                    |
+| Compiling assets          | Laravel Mix                            | Grunt, Gulp, 3rd party packages                         |
+| Development Environment   | Laravel Sail, Homestead                | Docker                                                  |
+| Deployment                | Laravel Forge                          | Deployer and other solutions                            |
+| Unit testing              | PHPUnit, Mockery                       | Phpspec                                                 |
+| Browser testing           | Laravel Dusk                           | Codeception                                             |
+| DB                        | Eloquent                               | SQL, Doctrine                                           |
+| Templates                 | Blade                                  | Twig                                                    |
+| Working with data         | Laravel collections                    | Arrays                                                  |
+| Form validation           | Request classes                        | 3rd party packages, validation in controller            |
+| Authentication            | Built-in                               | 3rd party packages, your own solution                   |
+| API authentication        | Laravel Passport, Laravel Sanctum      | 3rd party JWT and OAuth packages                        |
+| Creating API              | Built-in                               | Dingo API and similar packages                          |
+| Working with DB structure | Migrations                             | Working with DB structure directly                      |
+| Localization              | Built-in                               | 3rd party packages                                      |
+| Realtime user interfaces  | Laravel Echo, Pusher                   | 3rd party packages and working with WebSockets directly |
+| Generating testing data   | Seeder classes, Model Factories, Faker | Creating testing data manually                          |
+| Task scheduling           | Laravel Task Scheduler                 | Scripts and 3rd party packages                          |
+| DB                        | MySQL, PostgreSQL, SQLite, SQL Server  | MongoDB                                                 |
 
 [<p dir="rtl">🔝 الرجوع للفهرس</p>](#الفهرس)
 ### <p dir="rtl">13</p>
@@ -483,32 +483,32 @@ DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
  
  <p dir="rtl">وأيضا، راجع اصطلاح التسميات المقبول من جهه مجتمع لارافيل:</p>
 
-ماذا | كيف | جيدة | سيئة
------------- | ------------- | ------------- | -------------
-Controller | singular | ArticleController | ~~ArticlesController~~
-Route | plural | articles/1 | ~~article/1~~
-Named route | snake_case with dot notation | users.show_active | ~~users.show-active, show-active-users~~
-Model | singular | User | ~~Users~~
-hasOne or belongsTo relationship | singular | articleComment | ~~articleComments, article_comment~~
-All other relationships | plural | articleComments | ~~articleComment, article_comments~~
-Table | plural | article_comments | ~~article_comment, articleComments~~
-Pivot table | singular model names in alphabetical order | article_user | ~~user_article, articles_users~~
-Table column | snake_case without model name | meta_title | ~~MetaTitle; article_meta_title~~
-Model property | snake_case | $model->created_at | ~~$model->createdAt~~
-Foreign key | singular model name with _id suffix | article_id | ~~ArticleId, id_article, articles_id~~
-Primary key | - | id | ~~custom_id~~
-Migration | - | 2017_01_01_000000_create_articles_table | ~~2017_01_01_000000_articles~~
-Method | camelCase | getAll | ~~get_all~~
-Method in resource controller | [table](https://laravel.com/docs/master/controllers#resource-controllers) | store | ~~saveArticle~~
-Method in test class | camelCase | testGuestCannotSeeArticle | ~~test_guest_cannot_see_article~~
-Variable | camelCase | $articlesWithAuthor | ~~$articles_with_author~~
-Collection | descriptive, plural | $activeUsers = User::active()->get() | ~~$active, $data~~
-Object | descriptive, singular | $activeUser = User::active()->first() | ~~$users, $obj~~
-Config and language files index | snake_case | articles_enabled | ~~ArticlesEnabled; articles-enabled~~
-View | kebab-case | show-filtered.blade.php | ~~showFiltered.blade.php, show_filtered.blade.php~~
-Config | snake_case | google_calendar.php | ~~googleCalendar.php, google-calendar.php~~
-Contract (interface) | adjective or noun | AuthenticationInterface | ~~Authenticatable, IAuthentication~~
-Trait | adjective | Notifiable | ~~NotificationTrait~~
+| ماذا                             | كيف                                                                       | جيدة                                    | سيئة                                                |
+| -------------------------------- | ------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------- |
+| Controller                       | singular                                                                  | ArticleController                       | ~~ArticlesController~~                              |
+| Route                            | plural                                                                    | articles/1                              | ~~article/1~~                                       |
+| Named route                      | snake_case with dot notation                                              | users.show_active                       | ~~users.show-active, show-active-users~~            |
+| Model                            | singular                                                                  | User                                    | ~~Users~~                                           |
+| hasOne or belongsTo relationship | singular                                                                  | articleComment                          | ~~articleComments, article_comment~~                |
+| All other relationships          | plural                                                                    | articleComments                         | ~~articleComment, article_comments~~                |
+| Table                            | plural                                                                    | article_comments                        | ~~article_comment, articleComments~~                |
+| Pivot table                      | singular model names in alphabetical order                                | article_user                            | ~~user_article, articles_users~~                    |
+| Table column                     | snake_case without model name                                             | meta_title                              | ~~MetaTitle; article_meta_title~~                   |
+| Model property                   | snake_case                                                                | $model->created_at                      | ~~$model->createdAt~~                               |
+| Foreign key                      | singular model name with _id suffix                                       | article_id                              | ~~ArticleId, id_article, articles_id~~              |
+| Primary key                      | -                                                                         | id                                      | ~~custom_id~~                                       |
+| Migration                        | -                                                                         | 2017_01_01_000000_create_articles_table | ~~2017_01_01_000000_articles~~                      |
+| Method                           | camelCase                                                                 | getAll                                  | ~~get_all~~                                         |
+| Method in resource controller    | [table](https://laravel.com/docs/master/controllers#resource-controllers) | store                                   | ~~saveArticle~~                                     |
+| Method in test class             | camelCase                                                                 | testGuestCannotSeeArticle               | ~~test_guest_cannot_see_article~~                   |
+| Variable                         | camelCase                                                                 | $articlesWithAuthor                     | ~~$articles_with_author~~                           |
+| Collection                       | descriptive, plural                                                       | $activeUsers = User::active()->get()    | ~~$active, $data~~                                  |
+| Object                           | descriptive, singular                                                     | $activeUser = User::active()->first()   | ~~$users, $obj~~                                    |
+| Config and language files index  | snake_case                                                                | articles_enabled                        | ~~ArticlesEnabled; articles-enabled~~               |
+| View                             | kebab-case                                                                | show-filtered.blade.php                 | ~~showFiltered.blade.php, show_filtered.blade.php~~ |
+| Config                           | snake_case                                                                | google_calendar.php                     | ~~googleCalendar.php, google-calendar.php~~         |
+| Contract (interface)             | adjective or noun                                                         | AuthenticationInterface                 | ~~Authenticatable, IAuthentication~~                |
+| Trait                            | adjective                                                                 | Notifiable                              | ~~NotificationTrait~~                               |
 
 [<p dir="rtl">🔝 الرجوع للفهرس</p>](#الفهرس)
 ### <p dir="rtl">14</p>
@@ -530,24 +530,24 @@ $request->name;
 
 <p dir="rtl">أمثلة أكثر:</p>
 
-جمل مركبة | جمل أقصر وأكثر قابلية للقراءة
------------- | -------------
-`Session::get('cart')` | `session('cart')`
-`$request->session()->get('cart')` | `session('cart')`
-`Session::put('cart', $data)` | `session(['cart' => $data])`
-`$request->input('name'), Request::get('name')` | `$request->name, request('name')`
-`return Redirect::back()` | `return back()`
-`is_null($object->relation) ? null : $object->relation->id` | `optional($object->relation)->id`
-`return view('index')->with('title', $title)->with('client', $client)` | `return view('index', compact('title', 'client'))`
-`$request->has('value') ? $request->value : 'default';` | `$request->get('value', 'default')`
-`Carbon::now(), Carbon::today()` | `now(), today()`
-`App::make('Class')` | `app('Class')`
-`->where('column', '=', 1)` | `->where('column', 1)`
-`->orderBy('created_at', 'desc')` | `->latest()`
-`->orderBy('age', 'desc')` | `->latest('age')`
-`->orderBy('created_at', 'asc')` | `->oldest()`
-`->select('id', 'name')->get()` | `->get(['id', 'name'])`
-`->first()->name` | `->value('name')`
+| جمل مركبة                                                              | جمل أقصر وأكثر قابلية للقراءة                      |
+| ---------------------------------------------------------------------- | -------------------------------------------------- |
+| `Session::get('cart')`                                                 | `session('cart')`                                  |
+| `$request->session()->get('cart')`                                     | `session('cart')`                                  |
+| `Session::put('cart', $data)`                                          | `session(['cart' => $data])`                       |
+| `$request->input('name'), Request::get('name')`                        | `$request->name, request('name')`                  |
+| `return Redirect::back()`                                              | `return back()`                                    |
+| `is_null($object->relation) ? null : $object->relation->id`            | `optional($object->relation)->id`                  |
+| `return view('index')->with('title', $title)->with('client', $client)` | `return view('index', compact('title', 'client'))` |
+| `$request->has('value') ? $request->value : 'default';`                | `$request->get('value', 'default')`                |
+| `Carbon::now(), Carbon::today()`                                       | `now(), today()`                                   |
+| `App::make('Class')`                                                   | `app('Class')`                                     |
+| `->where('column', '=', 1)`                                            | `->where('column', 1)`                             |
+| `->orderBy('created_at', 'desc')`                                      | `->latest()`                                       |
+| `->orderBy('age', 'desc')`                                             | `->latest('age')`                                  |
+| `->orderBy('created_at', 'asc')`                                       | `->oldest()`                                       |
+| `->select('id', 'name')->get()`                                        | `->get(['id', 'name'])`                            |
+| `->first()->name`                                                      | `->value('name')`                                  |
 
 [<p dir="rtl">🔝 الرجوع للفهرس</p>](#الفهرس)
 ### <p dir="rtl">15</p>
