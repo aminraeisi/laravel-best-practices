@@ -1,22 +1,14 @@
-<<<<<<< HEAD
 ![Laravel best practices](/images/logo-arabic.png?raw=true)this is amins text
-=======
-asadadsa asdaa![Laravel best practices](/images/logo-arabic.png?raw=true)
->>>>>>> dev
 
 You might also want to check out the [real-world Laravel example application](https://github.com/alexeymezenin/laravel-realworld-example-app)
 
 ## <p dir="rtl">الترجمات</p>
 
-<<<<<<< HEAD
 img
 
-p
-=======
 adada
 
 12131
->>>>>>> dev
 
 3243232
 
